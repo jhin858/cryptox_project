@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptex</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    .table-data.green {
+        color: green;
+    }
+
+    .table-data.red {
+        color: red;
+    }
+</style>
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="32" height="32" alt="Cryptex logo">
+        Cryptex
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link active" data-nav-link>Homepage</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about_us.html" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="Cryptex.html" class="navbar-link" data-nav-link>Cryptex</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <a href="login.html" class="btn btn-outline">Join</a>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="hero" data-section>
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Cryptocurrency Price Prediction</h1>
+
+            <p class="hero-text">
+              Comprehensive cryptocurrency forecasts and market insights for 2024 and beyond
+            </p>
+
+            <a href="Cryptex.html" class="btn btn-primary">Get started now</a>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="570" height="448" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #TREND
+      -->
+
+      <section class="section trend" aria-label="crypto trend" data-section>
+        <div class="container">
+
+          <div class="trend-tab">
+
+            <ul class="tab-nav">
+
+              <li>
+                <button class="tab-btn active">Crypto Trends</button>
+              </li>
+
+
+            </ul>
+
+            <ul class="tab-content">
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/coin-1.svg" width="24" height="24" alt="bitcoin logo">
+
+                    <a href="#" class="card-title">
+                      Bitcoin <span class="span">BTC/USD</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="46168.95">USD 60,168.95</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20">60,641.20</data>
+
+                    <div class="badge red">-0.79%</div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card active">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/coin-2.svg" width="24" height="24" alt="ethereum logo">
+
+                    <a href="#" class="card-title">
+                      Ethereum <span class="span">ETH/USD</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="3480.04">USD 3,000.04</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20">2,950.20</data>
+
+                    <div class="badge green">+10.55%</div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/coin-3.svg" width="24" height="24" alt="tether logo">
+
+                    <a href="#" class="card-title">
+                      Tether <span class="span">USDT/USD</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="1.00">USD 1.00</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20">1.01</data>
+
+                    <div class="badge red">-0.01%</div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/coin-4.svg" width="24" height="24" alt="bnb logo">
+
+                    <a href="#" class="card-title">
+                      BNB <span class="span">BNB/USD</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="443.56">USD 443.56</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20">641.20</data>
+
+                    <div class="badge red">-1.24%</div>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- 
+        - #MARKET
+      -->
+
+  <section class="section market" aria-label="market update" data-section>
+    <div class="container">
+        <div class="title-wrapper">
+            <h2 class="h2 section-title">Market Update</h2>
+           <!--  <a href="#" class="btn-link">See All Coins</a> -->
+        </div>
+
+        <table class="market-table">
+            <thead class="table-head">
+                <tr class="table-row table-title">
+                    <th class="table-heading" scope="col">#</th>
+                    <th class="table-heading" scope="col">Name</th>
+                    <th class="table-heading" scope="col">Last Price</th>
+                    <th class="table-heading" scope="col">24h %</th>
+                    <th class="table-heading" scope="col">Market Cap</th>
+                    <th class="table-heading" scope="col">Last 7 Days</th>
+                </tr>
+            </thead>
+            <tbody id="market-data" class="table-body">
+                <!-- Data will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+</section>
+
+      <!-- 
+        - #INSTRUCTION
+      -->
+
+      <section class="section instruction" aria-label="instruction" data-section>
+        <div class="container">
+
+          <h2 class="h2 section-title">How to predict crypto prices? </h2>
+
+          <p class="section-text">
+            We use technical indicators to make cryptocurrency price predictions and estimate cryptocurrency prices in the future. </p>
+
+          <ul class="instruction-list">
+
+            <li>
+              <div class="instruction-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/instruction-1.png" width="96" height="96" loading="lazy" alt="Step 1"
+                    class="img">
+                </figure>
+
+                <p class="card-subtitle">Step 1</p>
+
+                <h3 class="h3 card-title">Understanding Technical Indicators</h3>
+
+                <p class="card-text">
+                  Become familiar with various technical indicators used to predict crypto prices. Stay updated with crypto news to grasp the latest market developments.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instruction-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/instruction-2.png" width="96" height="96" loading="lazy" alt="Step 2"
+                    class="img">
+                </figure>
+
+                <p class="card-subtitle">Step 2</p>
+
+                <h3 class="h3 card-title">Analyzing Price Movements</h3>
+
+                <p class="card-text">
+                  Learn how to read crypto price charts and forecast price movements using technical indicators. Determine whether a cryptocurrency is currently overvalued or undervalued. </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instruction-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/instruction-3.png" width="96" height="96" loading="lazy" alt="Step 3"
+                    class="img">
+                </figure>
+
+                <p class="card-subtitle">Step 3</p>
+
+                <h3 class="h3 card-title">Using Moving Averages</h3>
+
+                <p class="card-text">
+                  Utilize moving averages as a straightforward method for tracking price trends. Gain insights based on whether the asset's price is above or below key moving averages such as the 21-day, 50-day, and 200-day moving averages. </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instruction-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/instruction-4.png" width="96" height="96" loading="lazy" alt="Step 4"
+                    class="img">
+                </figure>
+
+                <p class="card-subtitle">Step 4</p>
+
+                <h3 class="h3 card-title">Implementing Support & Resistance Levels</h3>
+
+                <p class="card-text">
+                  Identify key support and resistance levels on price charts. These levels can help predict potential price movements and provide entry and exit points for trades. </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" aria-label="about" data-section>
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="748" height="436" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">What Is Cryptex</h2>
+
+            <p class="section-text">
+              Experience a variety of trading on Bitcost. You can use various types of coin transactions such as Spot
+              Trade, Futures
+              Trade, P2P, Staking, Mining, and margin.
+            </p>
+
+            <ul class="section-list">
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 list-title">View real-time cryptocurrency prices</h3>
+                </div>
+
+                <p class="item-text">
+                  Experience a variety of trading on Bitcost. You can use various types of coin transactions such as
+                  Spot Trade, Futures
+                  Trade, P2P, Staking, Mining, and margin.
+                </p>
+              </li>
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 list-title">Buy and sell BTC, ETH, XRP, OKB, Etc...</h3>
+                </div>
+
+                <p class="item-text">
+                  Experience a variety of trading on Bitcost. You can use various types of coin transactions such as
+                  Spot Trade, Futures
+                  Trade, P2P, Staking, Mining, and margin.
+                </p>
+              </li>
+
+            </ul>
+
+            <a href="#" class="btn btn-primary">Explore More</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FOOTER
+      -->
+
+      <footer class="footer" data-footer>
+        <div class="container">
+
+          <div class="footer-content">
+
+            <div class="footer-section">
+              <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" width="32" height="32" alt="Cryptex logo">
+                Cryptex
+              </a>
+              <p class="footer-text">
+                Predict cryptocurrency prices with confidence using our advanced tools and analysis.
+              </p>
+            </div>
+
+            <div class="footer-section">
+              <h3 class="h3 footer-title">Quick Links</h3>
+              <ul class="footer-list">
+                <li><a href="#" class="footer-link">Homepage</a></li>
+                <li><a href="#" class="footer-link">About</a></li>
+                <li><a href="#" class="footer-link">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-section">
+              <h3 class="h3 footer-title">Follow Us</h3>
+              <ul class="social-list">
+                <li><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </footer>
+
+    </article>
+  </main>
+
+
+
+  <script>
+// Function to fetch cryptocurrency data from the API
+function fetchCryptoData() {
+    // Make AJAX request to fetch data
+    fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd')
+        .then(response => response.json())
+        .then(data => {
+            // Process data and update HTML elements
+            const marketData = document.getElementById('market-data');
+            marketData.innerHTML = ''; // Clear existing data
+
+            // Limit the iteration to the first 16 elements
+            data.slice(0, 16).forEach((crypto, index) => {
+                const row = `
+                    <tr class="table-row">
+                        <td class="table-data">${index + 1}</td>
+                        <td class="table-data">
+                            <img src="${crypto.image}" alt="${crypto.name} logo" width="24" height="24">
+                            ${crypto.name} (${crypto.symbol.toUpperCase()})
+                        </td>
+                        <td class="table-data">$${crypto.current_price.toFixed(2)}</td>
+                        <td class="table-data ${crypto.price_change_percentage_24h < 0 ? 'red' : crypto.price_change_percentage_24h > 0 ? 'green' : ''}">
+                            ${crypto.price_change_percentage_24h.toFixed(2)}%
+                        </td>
+                        <td class="table-data">$${crypto.market_cap.toLocaleString()}</td>
+                        <td class="table-data">$${crypto.market_cap_change_24h.toLocaleString()}</td>
+                    </tr>
+                `;
+                marketData.innerHTML += row;
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+}
+
+// Call the fetchCryptoData function when the page loads
+window.onload = fetchCryptoData;
+
+</script>
+
+  <!-- 
+    - font awesome script
+  -->
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+
+  <!-- 
+    - your custom js script
+  -->
+  <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

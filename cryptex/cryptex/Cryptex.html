@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptex</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .image {
+      margin: 10px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .image img {
+      transition: transform 0.3s ease;
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    .caption {
+      margin-top: 5px;
+      font-size: 14px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .image:hover img {
+      transform: scale(1.1);
+    }
+
+    .image:hover .caption {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="32" height="32" alt="Cryptex logo"> Cryptex
+      </a>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link active" data-nav-link>Homepage</a>
+          </li>
+          <li class="navbar-item">
+            <a href="about_us.html" class="navbar-link" data-nav-link>About</a>
+          </li>
+          <li class="navbar-item">
+            <a href="Cryptex.html" class="navbar-link" data-nav-link>Cryptex</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+      <a href="login.html" class="btn btn-outline">Join</a>
+    </div>
+  </header>
+  <br><br>
+  <div class="gallery">
+    <div class="image image-1">
+      <img src="assets/images/1.jpg" alt="Image 1">
+      <div class="caption">A cross-chart of the overall market size and play diversity of the crypto market A chart showing the total market cap and trading volume</div>
+    </div>
+    <div class="image image-2">
+      <img src="assets/images/2.jpg" alt="Image 2">
+      <div class="caption">A chart showing the total market cap and trading volume</div>
+    </div>
+    <div class="image image-3">
+      <img src="assets/images/3.jpg" alt="Image 3">
+      <div class="caption">Showing top 5 cryptocurrencies based on their ranking.</div>
+    </div>
+    <div class="image image-4">
+      <img src="assets/images/4.jpg" alt="Image 4">
+      <div class="caption">Showing the market composition of a number of cryptocurrencies The percentages for each cryptocurrency are displayed in pie slices, with larger values ​​representing larger pie slices.</div>
+    </div>
+    <div class="image image-5">
+      <img src="assets/images/5.jpg" alt="Image 5">
+      <div class="caption">Bitcoin's maximum drop in price,</div>
+    </div>
+    <div class="image image-6">
+      <img src="assets/images/6.jpg" alt="Image 6">
+      <div class="caption">Bitcoin's largest drop in price during a certain period, which is from 2017-01-01 to the present.</div>
+    </div>
+    <div class="image image-7">
+      <img src="assets/images/7.jpg" alt="Image 7">
+      <div class="caption">A data frame containing the returns of cryptocurrencies such as Bitcoin, Ethereum, and Ripple for 2017.</div>
+    </div>
+    <div class="image image-8">
+      <img src="assets/images/8.jpg" alt="Image 8">
+      <div class="caption">A data frame containing returns for cryptocurrencies and real assets together for dates that match both.</div>
+    </div>
+    <div class="image image-9">
+      <img src="assets/images/9.jpg" alt="Image 9">
+      <div class="caption">Calculate some basic statistics for 2017 cryptocurrency returns, such as the mean and standard deviation</div>
+    </div>
+    <div class="image image-10">
+      <img src="assets/images/10.jpg" alt="Image 10">
+      <div class="caption">crypto2017.describe</div>
+    </div>
+  </div>
+</body>
+
+</html>
